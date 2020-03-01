@@ -1,5 +1,5 @@
 {% set name = "environs" %}
-{% set version = "7.2.0" %}
+{% set version = "7.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 44700c562fb6f783640f90c2225d9a80d85d24833b4dd02d20b8ff1c83901e47
+  sha256: 54099cfbdd9cb320f438bf29992969ccfd5e232ba068bd650b04d76d96001631
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -32,7 +32,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Simplified environment variable parsing'
+  summary: Simplified environment variable parsing
   dev_url: https://github.com/sloria/environs
 
 extra:
