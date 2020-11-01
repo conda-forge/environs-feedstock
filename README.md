@@ -5,11 +5,11 @@ Home: https://github.com/sloria/environs
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/environs-feedstock/blob/master/LICENSE.txt)
 
 Summary: Simplified environment variable parsing
 
-
+Development: https://github.com/sloria/environs
 
 Current build status
 ====================
