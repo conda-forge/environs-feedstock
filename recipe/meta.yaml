@@ -1,5 +1,5 @@
 {% set name = "environs" %}
-{% set version = "9.4.0" %}
+{% set version = "9.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b1cb81fbc0568d85c8ca32328e17bd756a2bb16cff54371d18d15d1832b692aa
+  sha256: a76307b36fbe856bdca7ee9161e6c466fd7fcffc297109a118c59b54e27e30c9
 
 build:
   noarch: python
