@@ -1,5 +1,5 @@
 {% set name = "environs" %}
-{% set version = "12.0.0" %}
+{% set version = "14.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6150ddeb05562a80cc789b308c650d33b98a5f9c3f4c63d9ed465c433f1cb9e2
+  sha256: 02c50088c459a2b21d6530cacd173c7528c38a723aae2791a863266ca41d9eeb
 
 build:
   noarch: python
@@ -20,8 +20,9 @@ requirements:
     - pip
     - flit
   run:
+    - typing_extensions
     - python >={{ python_min }}
-    - marshmallow >=3.13.0
+    - marshmallow >=3.18.0
     - python-dotenv
 
 test:
