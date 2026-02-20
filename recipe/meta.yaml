@@ -1,5 +1,5 @@
 {% set name = "environs" %}
-{% set version = "14.5.0" %}
+{% set version = "14.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f7b8f6fcf3301bc674bc9c03e39b5986d116126ffb96764efd34c339ed9464ee
+  sha256: ed2767588deb503209ffe4dd9bb2b39311c2e4e7e27ce2c64bf62ca83328d068
 
 build:
   noarch: python
@@ -22,7 +22,7 @@ requirements:
   run:
     - typing_extensions
     - python >={{ python_min }}
-    - marshmallow >=3.18.0
+    - marshmallow >=3.26.2
     - python-dotenv
 
 test:
