@@ -1,5 +1,5 @@
 {% set name = "environs" %}
-{% set version = "15.0.1" %}
+{% set version = "15.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 638106bfb5d8c9a13ee51c23a9f2416baf9a748c8e537fec771102927cd02aa8
+  sha256: 268597f56e74d3304b8724db3d3d94db54427d7a7f17153e6b22520a6f0cfb9e
 
 build:
   noarch: python
