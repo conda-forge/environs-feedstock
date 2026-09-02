@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: environs
-  version: "15.2.0"
+  version: 15.2.0
 
 package:
   name: ${{ name|lower }}
@@ -19,7 +19,7 @@ build:
 
 requirements:
   host:
-    - python ${{ python_min }}
+    - python ${{ python_min }}.*
     - pip
     - flit
   run:
